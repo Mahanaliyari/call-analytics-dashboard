@@ -56,7 +56,7 @@ The dataset returned by the API (100 records) has some characteristics worth kno
 - **Every record has `callStatus: false`**, so the dashboard shows 0 successful calls and 100 failed calls. This reflects the data, not a calculation error.
 - **Every record has `callDirection: false`** (outbound), so there is no inbound/outbound split to visualise.
 - **`callEndTime` is unreliable.** In many records the end time is earlier than the start time, and the gap between the two does not match `callDuration`. All duration metrics therefore use the `callDuration` field and ignore end time.
-- **Almost every city appears only once**, so the "Calls by City" chart is nearly flat and the cost chart effectively shows the most expensive individual calls. The card subtitle shows the number of distinct cities.
+- **Every city appears exactly once** (100 distinct cities across 100 calls), so the "Calls by City" chart is flat by design and the cost chart effectively shows the 10 most expensive individual calls.
 - **All calls fall on 11-12 March 2026**, so the per-day view has only two points. The per-hour view is the more informative one.
 - `callCost` is returned as a string and is converted to a number before any calculation.
 
