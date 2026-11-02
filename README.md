@@ -5,7 +5,6 @@ A SaaS-style analytics dashboard for **Call Data Records (CDR)**. It fetches cal
 Built for the *Software Development Internship, Week 2, Assignment 2* (London Success Academy).
 
 **Live demo:** https://call-analytics-dashboard-ruby.vercel.app/
-**Repository:** https://github.com/Mahanaliyari/call-analytics-dashboard
 
 ## Screenshots
 
